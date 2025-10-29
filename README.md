@@ -1,1 +1,1 @@
-# bsu-mocktrial.github.io
+# bsumocktrial.github.io
