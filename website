@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bridgewater State University Mock Trial Club</title>
+  <meta name="description" content="Bridgewater State University Mock Trial Club — Veritas • Libertas • Justitia" />
+  <style>
+    :root{
+      --crimson:#800000;/* BSU red provided */
+      --gold:#d4af37;   /* requested gold */
+      --ink:#1b1b1b;    /* body text */
+      --paper:#faf9f7;  /* soft white */
+      --muted:#6b7280;  /* subtle gray */
+      --maxw: 900px;    /* readable line length */
+    }
+    html,body{height:100%;}
+    body{
+      margin:0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--paper);
+      line-height:1.6; font-size:16px; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    /* Ivy / traditional typographic flavor */
+    .display{font-family: "Georgia", "Times New Roman", Times, serif; letter-spacing:.5px;}
+    .smallcaps{font-variant-caps: small-caps; letter-spacing:.08em;}
+
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:28px 20px;}
+
+    header.site{
+      border-bottom:1px solid #eae7e2;
+      background:linear-gradient(180deg, #fff, #fff 40%, transparent);
+    }
+    .brand{display:flex; align-items:center; gap:14px;}
+    .crest{width:44px; height:44px; border-radius:50%; border:2px solid var(--gold); display:grid; place-items:center;}
+    .crest svg{width:24px; height:24px; color:var(--crimson);}
+
+    nav a{color:var(--ink); text-decoration:none; margin-right:18px; font-size:0.95rem}
+    nav a:hover{color:var(--crimson)}
+
+    .hero{padding:64px 0 48px; text-align:center;}
+    .hero h1{margin:0 0 8px; font-size: clamp(28px, 6vw, 44px); font-weight:700}
+    .motto{color:var(--muted); margin:0 0 18px}
+
+    .divider{display:flex; justify-content:center; align-items:center; gap:14px; margin:22px 0 0;}
+    .rule{height:1px; background:linear-gradient(to right, transparent, var(--gold), transparent); width:200px;}
+    .bars{font-size:22px; color:var(--gold)} /* ‖ */
+
+    section{padding:28px 0;}
+    h2{font-family: "Georgia", "Times New Roman", Times, serif; font-weight:700; font-size: clamp(20px, 3.5vw, 28px); margin:0 0 6px}
+    .lede{color:var(--muted); margin:0 0 16px}
+    .card{
+      background:#fff; border:1px solid #eee7db; border-radius:14px; padding:18px 18px; box-shadow:0 6px 20px rgba(0,0,0,.03);
+    }
+    .grid{display:grid; gap:16px}
+    @media (min-width: 820px){ .grid{grid-template-columns: 1fr 1fr;}}
+
+    ul.clean{list-style:"—  "; padding-left:1.1rem}
+    ul.tight > li{margin:6px 0}
+
+    .cta{display:inline-block; margin-top:8px; padding:10px 16px; border-radius:999px; border:1px solid var(--crimson); color:#fff; background:var(--crimson); text-decoration:none; font-weight:600}
+    .cta:hover{filter:brightness(.95)}
+
+    footer{border-top:1px solid #eae7e2; color:#6b6b6b}
+    .footgrid{display:grid; gap:8px}
+    @media (min-width:760px){.footgrid{grid-template-columns:1fr auto}}
+
+    .badge{display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border:1px solid #eee7db; border-radius:9999px; background:#fff}
+    .dot{width:8px; height:8px; border-radius:50%; background:var(--gold)}
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <div class="brand">
+        <span class="crest" aria-hidden="true" title="BSU Mock Trial Crest">
+          <!-- Simple balanced scales icon in SVG using your colors -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v4"/>
+            <path d="M4 7h16"/>
+            <path d="M6.5 7 4 12a3 3 0 0 0 6 0L7.5 7"/>
+            <path d="M17.5 7 15 12a3 3 0 0 0 6 0L19.5 7"/>
+            <path d="M12 7v12"/>
+            <path d="M8 19h8"/>
+          </svg>
+        </span>
+        <div>
+          <div class="smallcaps" style="color:var(--muted); font-size:.9rem">Bridgewater State University</div>
+          <div class="display" style="font-size:1.25rem; font-weight:700">Mock Trial Club</div>
+        </div>
+        <div style="margin-left:auto">
+          <nav aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#standards">Standards</a>
+            <a href="#join">Join</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1 class="display">Veritas · Libertas · Justitia</h1>
+        <p class="motto">Truth • Liberty • Justice</p>
+        <div class="divider" aria-hidden="true">
+          <span class="rule"></span>
+          <span class="bars">‖</span>
+          <span class="rule"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap grid">
+        <article class="card">
+          <h2>What We Do</h2>
+          <p class="lede">A disciplined courtroom simulation: opening statements, examinations, objections, and closing arguments built on a single case packet.</p>
+          <ul class="clean tight">
+            <li>Attorney & witness roles with coaching</li>
+            <li>Case theory, evidence handling, and objections</li>
+            <li>Composure, clarity, and presence under pressure</li>
+          </ul>
+        </article>
+        <aside class="card">
+          <h2>Season at a Glance</h2>
+          <ul class="clean tight">
+            <li>Case release → training workshops</li>
+            <li>Scrimmages and invitationals</li>
+            <li>Regional competition</li>
+          </ul>
+          <a class="cta" href="#join" aria-label="Join BSU Mock Trial">Request to Join</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="standards">
+      <div class="wrap">
+        <div class="badge" style="margin-bottom:12px"><span class="dot"></span><span class="smallcaps" style="letter-spacing:.12em">Expectations</span></div>
+        <div class="card">
+          <h2>Standards & Conduct</h2>
+          <ul class="clean tight">
+            <li><strong>Professional demeanor</strong> in meetings and rounds</li>
+            <li><strong>Preparedness</strong> — respect the team’s time</li>
+            <li><strong>Attendance & reliability</strong> — roles depend on you</li>
+            <li><strong>Respect for procedure</strong> and coaching</li>
+            <li><strong>Constructive critique</strong> — direct, never personal</li>
+            <li><strong>Dress code:</strong> business professional at events</li>
+            <li><strong>Integrity</strong> — strategies stay within the team</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="join">
+      <div class="wrap grid">
+        <div class="card">
+          <h2>Join Us</h2>
+          <p class="lede">We welcome students committed to clarity, discipline, and growth.</p>
+          <ul class="clean tight">
+            <li>Weekly practices (schedule posted each term)</li>
+            <li>Workshops: objections, openings, crosses</li>
+            <li>Tryouts/placement at start of season</li>
+          </ul>
+          <p>Express interest via email: <a href="mailto:mocktrial@bridgew.edu">mocktrial@bridgew.edu</a></p>
+        </div>
+        <div class="card">
+          <h2>Current Officers</h2>
+          <ul class="clean tight">
+            <li>President — Your Name</li>
+            <li>Vice President — Your Name</li>
+            <li>Treasurer — Your Name</li>
+            <li>Secretary — Your Name</li>
+          </ul>
+          <p style="margin-top:8px; color:var(--muted)">Replace with your actual roster; titles may vary.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footgrid">
+      <div>
+        <div class="smallcaps" style="color:var(--muted)">Bridgewater State University</div>
+        <div class="display" style="font-size:1rem; font-weight:700">Mock Trial Club</div>
+      </div>
+      <div style="text-align:right">
+        <div class="smallcaps" style="color:var(--muted)">Established</div>
+        <div>MMXXV</div>
+      </div>
+    </div>
+    <div class="wrap" style="padding-top:0; padding-bottom:40px; color:#8c8c8c; font-size:.9rem">
+      © <span id="year"></span> Bridgewater State University Mock Trial Club — <span style="color:var(--crimson)">Veritas</span> • <span style="color:var(--crimson)">Libertas</span> • <span style="color:var(--crimson)">Justitia</span>
+    </div>
+  </foot
